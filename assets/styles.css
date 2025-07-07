@@ -1,0 +1,102 @@
+/* Login screen styles */
+.security-app .login-card {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5rem 1.5rem;
+    position: absolute;
+    max-width: 400px;
+    min-width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.security-app .form-group {
+    margin-bottom: 0.7rem;
+}
+
+.security-app .log-title {
+       font-size: 32px;
+    font-weight: 700;
+    color: #0083bb;
+    margin-bottom: 1rem;
+}
+
+.security-app label {
+    color: #0083bb;
+        font-size: 14px;
+}
+
+.security-app .error-text {
+    color: #bd0707;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+.security-app input:focus {
+    border-color: #0083bb;
+}
+
+.security-app .view-icon {
+    position: absolute;
+    top: 26px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.security-app .forgot-password-text {
+    font-weight: 500;
+    float: right;
+    text-decoration: none;
+    font-size: 12px;
+    color: #0083bb;
+}
+
+/* Registration screen style */
+.form-buttons {
+    text-align: center;
+    margin: 2rem 0;
+}
+.registration-card{
+        box-shadow: 1px 1px 5px 0px #ccc;
+    border-radius: 8px;
+}
+.registration-header {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+/* common styles */
+.form-control, .form-select{
+    box-shadow: none !important;
+    font-size: 14px !important;
+    height: 30px !important;
+    padding: 0.2rem 0.6rem !important;
+}
+.primary-font-color {
+    color: #0083bb;
+    font-weight: 500;
+}
+
+.accordion-button {
+    padding: 0.5rem !important;
+    margin-bottom: 1rem;
+    background: #e1e1e1 !important;
+    outline: none;
+    box-shadow: none !important;
+}
+.accordion-body{
+padding: 0 1rem !important;
+}
+.accordion-item {
+    border: none !important;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.full-hyt {
+    height: 98vh;
+}
