@@ -1,4 +1,9 @@
 /* Login screen styles */
+.full-container {
+    width: 100% !important;
+    height: 100vh;
+}
+
 .security-app .login-card {
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -9,6 +14,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 9;
+    background: #f1f1f1;
 }
 
 .security-app .form-group {
@@ -16,15 +23,19 @@
 }
 
 .security-app .log-title {
-       font-size: 32px;
+    font-size: 32px;
     font-weight: 700;
-    color: #0083bb;
+    color: #052c65;
     margin-bottom: 1rem;
 }
 
-.security-app label {
+.security-app label, p {
     color: #0083bb;
-        font-size: 14px;
+    font-size: 14px;
+}
+a{
+    font-weight: 700;
+    color: #052c65 !important;
 }
 
 .security-app .error-text {
@@ -39,9 +50,10 @@
 
 .security-app .view-icon {
     position: absolute;
-    top: 26px;
+    top: 2px;
     right: 5px;
     cursor: pointer;
+    z-index: 9;
 }
 
 .security-app .forgot-password-text {
@@ -52,15 +64,43 @@
     color: #0083bb;
 }
 
+.security-app {
+    background: url('../assets/images/login-left-img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.reg-form {
+    z-index: 9;
+    margin: auto;
+    background: #fff;
+    border-radius: 8px;
+    min-height: 100vh;
+}
+
+.security-app::after {
+    content: '';
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.6;
+    top: 0;
+}
+
 /* Registration screen style */
 .form-buttons {
     text-align: center;
     margin: 2rem 0;
 }
-.registration-card{
-        box-shadow: 1px 1px 5px 0px #ccc;
+
+.registration-card {
+    box-shadow: 1px 1px 5px 0px #ccc;
     border-radius: 8px;
 }
+
 .registration-header {
     font-size: 16px;
     font-weight: 600;
@@ -68,12 +108,31 @@
 }
 
 /* common styles */
-.form-control, .form-select{
+.btn{
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0.3rem 0.9rem !important;
+}
+.btn-primary{
+    background-color: #052c65 !important;
+    border: none !important;
+}
+.btn-secondary{
+    background-color: transparent !important;
+    color: #052c65 !important;
+}
+.form-control,
+.form-select {
     box-shadow: none !important;
     font-size: 14px !important;
     height: 30px !important;
     padding: 0.2rem 0.6rem !important;
 }
+
+.input-pre-icon {
+    height: 14px;
+}
+
 .primary-font-color {
     color: #0083bb;
     font-weight: 500;
@@ -86,9 +145,11 @@
     outline: none;
     box-shadow: none !important;
 }
-.accordion-body{
-padding: 0 1rem !important;
+
+.accordion-body {
+    padding: 0 1rem !important;
 }
+
 .accordion-item {
     border: none !important;
 }
