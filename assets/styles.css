@@ -65,7 +65,7 @@ a{
 }
 
 .security-app {
-    background: url('../assets/images/login-left-img.jpg');
+    background: url('../assets/images/login-left-img.jpg');  /*<----instead of this image we can place any other also */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
