@@ -70,7 +70,13 @@ a{
     font-size: 12px;
     color: #0083bb;
 }
-
+.header1{
+    padding: 0.8rem;
+    background-color: yellow;
+}
+.justify-content-space-between{
+    justify-content: space-between;
+}
 .security-app {
     background:#4d7287;
     background-position: center;
@@ -143,9 +149,10 @@ a{
 
 .primary-font-color {
     color: #0083bb;
-    font-weight: 500;
 }
-
+.logout-icon{
+        filter: invert(100%) brightness(200%);
+}
 .accordion-button {
     padding: 0.5rem !important;
     margin-bottom: 1rem;
